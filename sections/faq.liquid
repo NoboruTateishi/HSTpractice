@@ -1,0 +1,31 @@
+<section class="page-width">
+    <h3>{{section.settings.title}}</h3>
+        <dl>
+            <dt>質問１：配送業者はどこですか？</dt>
+            <dd>回答１：ヤマト運輸でのお届けとなります。</dd>
+            <dt>質問２：配送先の住所を変更できますか？</dt>
+            <dd>回答２：可能です。お問い合わせフォームからご連絡ください。</dd>
+        </dl>
+</section>
+
+{% schema %}
+{
+    "name": "FAQ",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "default":"FAQ",
+            "label": "FAQのタイトル"
+        }
+        ],
+
+    "presets": [
+        {
+            "name": "FAQ"
+        }
+    ]
+}
+{% endschema %}
+
+<fieldset></fieldset>
